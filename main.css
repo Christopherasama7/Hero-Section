@@ -13,7 +13,7 @@ nav {
     margin-top: 20px;
     justify-content: space-between;
     align-items: center;
-    margin: 20px 90px 20px 70px;
+    margin: 20px 90px 20px 10px;
     text-align: center;
 }
 
@@ -31,7 +31,7 @@ nav {
 }
 
 .hero-heading {
-    margin-left: 50px;
+    margin-left: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
