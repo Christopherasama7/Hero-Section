@@ -85,10 +85,6 @@ nav {
 
 /* Mobile View */
 @media screen and (max-width: 480px) {
-    body {
-        margin-left: 40px;
-    }
-    
     nav {
         flex-direction: column;
         align-items: center;
