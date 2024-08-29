@@ -1,20 +1,3 @@
-Sure! Here are some suggestions to make your code more responsive:
-
-### 1. **Simplify Media Queries**
-You can combine similar media queries to avoid repetition and make the code cleaner.
-
-### 2. **Use Flexbox for Layouts**
-Flexbox can help create more flexible and responsive layouts.
-
-### 3. **Adjust Margins and Padding**
-Use relative units like percentages or `em` for margins and padding to make them more responsive.
-
-### 4. **Ensure Consistent Styling**
-Make sure all elements have consistent styling across different screen sizes.
-
-Here's an updated version of your CSS with these improvements:
-
-```css
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
 * {
@@ -147,7 +130,7 @@ nav {
     }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 320px) {
     .hero-heading {
         grid-template-columns: 1fr;
     }
