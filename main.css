@@ -118,11 +118,16 @@ nav {
 @media screen and (max-width: 900px) {
     .hero-heading {
         grid-template-columns: 1fr;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
     }
 
     .partners {
         flex-direction: column;
         text-align: center;
+        justify-content: center;
+        align-items: center;
     }
 
     .footer {
