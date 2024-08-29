@@ -5,15 +5,15 @@
     padding: 0;
     box-sizing: border-box;
     background-color: #fff;
-    max-width: 100%;
     font-family: "DM Sans", sans-serif;
 }
 
 nav {
     display: flex;
-    margin: 20px 5%;
+    margin-top: 20px;
     justify-content: space-between;
     align-items: center;
+    margin: 20px 90px 20px 70px;
     text-align: center;
 }
 
@@ -22,7 +22,6 @@ nav {
     padding: 10px 20px;
     border-radius: 40px;
     border: 1px solid #4A3AFF;
-    gap: 8px;
 }
 
 .btn1 a {
@@ -32,14 +31,13 @@ nav {
 }
 
 .hero-heading {
-    margin-left: 5%;
+    margin-left: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
 }
 
 .heroheading-img img {
-    max-width: 100%;
     justify-content: center;
     align-items: center;
 }
@@ -88,7 +86,7 @@ nav {
 }
 
 .get-started-button {
-    background-color: #5e4ef6; 
+    background-color: #5e4ef6;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -116,18 +114,33 @@ nav {
 }
 
 @media screen and (max-width: 900px) {
-    .hero-heading {
-        grid-template-columns: 1fr;
-        justify-content: center;
-        text-align: center;
+    .navbar {
+        justify-content: space-between;
         align-items: center;
     }
 
+    .navbtn {
+        padding: 10px;
+    }
+
+    .hero-heading {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .hero-container {
+        max-width: 100%;
+    }
+
+    .heroheading-img img {
+        max-width: 100%;
+    }
+
     .partners {
+        display: flex;
         flex-direction: column;
-        text-align: center;
         justify-content: center;
         align-items: center;
+        text-align: center;
     }
 
     .footer {
@@ -136,16 +149,28 @@ nav {
 }
 
 @media screen and (max-width: 320px) {
+    .navbar {
+        justify-content: space-between;
+        align-items: center;
+    }
+
     .hero-heading {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .hero-container {
+        max-width: 100%;
+    }
+
+    .heroheading-img img {
+        max-width: 100%;
     }
 
     .partners {
+        display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         text-align: center;
-        margin-left: 0;
     }
 }
-```
-
-This version uses more flexible units and simplifies the media queries. Let me know if you need any further adjustments!
