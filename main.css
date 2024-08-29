@@ -1,19 +1,36 @@
+Sure! Here are some suggestions to make your code more responsive:
+
+### 1. **Simplify Media Queries**
+You can combine similar media queries to avoid repetition and make the code cleaner.
+
+### 2. **Use Flexbox for Layouts**
+Flexbox can help create more flexible and responsive layouts.
+
+### 3. **Adjust Margins and Padding**
+Use relative units like percentages or `em` for margins and padding to make them more responsive.
+
+### 4. **Ensure Consistent Styling**
+Make sure all elements have consistent styling across different screen sizes.
+
+Here's an updated version of your CSS with these improvements:
+
+```css
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
 * {
-    margin: 0;;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     background-color: #fff;
-/*     max-width: 100%; */
+    max-width: 100%;
     font-family: "DM Sans", sans-serif;
 }
 
 nav {
     display: flex;
-    margin-top: 20px;
+    margin: 20px 5%;
     justify-content: space-between;
     align-items: center;
-    margin: 20px 90px 20px 70px;
     text-align: center;
 }
 
@@ -22,9 +39,6 @@ nav {
     padding: 10px 20px;
     border-radius: 40px;
     border: 1px solid #4A3AFF;
-    top: 32px;
-    left: 1169.5px;
-    /* padding: 15px 30px 21px 30px; */
     gap: 8px;
 }
 
@@ -35,25 +49,16 @@ nav {
 }
 
 .hero-heading {
-    margin-left: 50px;
-    /* margin-top: 100px; */
-    /* display: flex;
-    flex-wrap: wrap; */
+    margin-left: 5%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* max-width: 100%;  */
     align-items: center;
-    /* justify-content: center; */
-    /* align-content: center; */
-    /* text-align: center; */
 }
 
-
 .heroheading-img img {
-    /* max-width: 55%; */
+    max-width: 100%;
     justify-content: center;
     align-items: center;
-
 }
 
 .heroheading-text h3 {
@@ -87,7 +92,6 @@ nav {
     background-color: #fff;
     padding: 10px;
     border-radius: 25px;
-    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
     margin-bottom: 20px;
 }
 
@@ -117,51 +121,25 @@ nav {
     justify-content: center;
     gap: 30px;
     margin: 40px;
-    
 }
 
-.footer{
+.footer {
     margin-top: 20px;
     border-top: 1px solid #D9DBE9;
     display: flex;
     flex-wrap: wrap;
     padding: 50px;
-    /* gap: 450px; */
     justify-content: space-between;
 }
 
 @media screen and (max-width: 900px) {
-    .navbar {
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .navbtn{
-        /* margin-right: 40px; */
-        padding: 10px;
-    }
-
     .hero-heading {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .hero-container {
-        max-width: 100%;
-    }
-
-    .heroheading-img img {
-        max-width: 100%;
+        grid-template-columns: 1fr;
     }
 
     .partners {
-        display: flex;
         flex-direction: column;
-        /* width: 150px; */
-        justify-content: center;
-        align-items: center;
-        /* margin: 30px; */
         text-align: center;
-
     }
 
     .footer {
@@ -169,31 +147,17 @@ nav {
     }
 }
 
-@media screen and (max-width: 320px) {
-    .navbar {
-        justify-content: space-between;
-        align-items: center;
-    }
+@media screen and (max-width: 420px) {
     .hero-heading {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: 1fr;
     }
 
-    .hero-container {
-        max-width: 100%;
-    }
-
-    .heroheading-img img {
-        max-width: 100%;
-    }
     .partners {
-        display: flex;
         flex-direction: column;
-        /* width: 150px; */
-        justify-content: center;
-        align-items: center;
-        /* margin: 30px; */
         text-align: center;
-/*         margin-left: 170px; */
-
+        margin-left: 0;
     }
 }
+```
+
+This version uses more flexible units and simplifies the media queries. Let me know if you need any further adjustments!
